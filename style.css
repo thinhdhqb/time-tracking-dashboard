@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.profile-card {
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+
+.profile-pic img {
+    width: 70px;
+    height: 70px;
+    border: solid white 2px;
+    border-radius: 50%;
+}
+
+.profile-container {
+    position: absolute;
+    height: 70%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.navbar {
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.navbar div {
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.nav-item[data-is-active='true'] {
+    color: white;
+}
+
+.navbar div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.report-name {
+    color: white;
+    margin: 35px 0;
+}
+
+.report-name p {
+    font-weight: 300;
+    font-size: 13px;
+    color: hsl(235, 45%, 80%);
+    margin: 0
+}
+
+.report-name h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.card {
+    border-radius: 15px;
+    position: relative;
+}
+
+.exercise .icon-container {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.work .icon-container {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play .icon-container {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study .icon-container {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.self-care .icon-container {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.social .icon-container {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.icon-container {
+    overflow: hidden;
+    height: 210px;
+    border-radius: 15px 15px 20px 20px;
+    width: 100%;
+}
+
+.icon-container img {
+    float: right;
+    margin-right: 10px;
+    transform: translateY(-10%);
+}
+
+.more {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.more:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7499%) hue-rotate(295deg) brightness(102%) contrast(100%);
+}
+
+.info {
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+    padding: 23px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: ease 0.1s;
+}
+
+.info:hover {
+    background-color: hsl(235, 46%, 40%);
+    cursor: pointer;
+}
+
+.info .title {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info .timeframe {
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+    margin-left: 2px;
+}
+
+.info .previous {
+    color: hsl(236, 100%, 87%);
+    font-size: 12px;
+    margin-top: 5px;
+}
